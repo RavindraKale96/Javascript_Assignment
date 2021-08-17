@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-5</title>
+  </head>
+  <body bgcolor="lightblue">
+    <div style="text-align: center">
+      <h1>Welcome th the CS3 Page</h1>
+      <h3>Home of the Geeks</h3>
+    </div>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
+      perferendis harum at repudiandae dolor culpa inventore minima eos quo
+      expedita? Nobis nam corporis fuga eveniet accusantium laboriosam repellat
+      assumenda eius unde itaque atque molestias totam, odio aperiam quo fugiat
+      qui quas modi praesentium incidunt! Maiores molestiae aut eius ex
+      consequatur.
+    </p>
+    <p>
+      The primary textbook for this course is
+      <a href="#">Computer Took for and Inforamation Age </a>by H L Capron
+    </p>
+    <p>
+      <span>
+        <img
+          border="1px"
+          src="/image/astronaut.png"
+          alt="astrnaut"
+          width="100px"
+          height="100px"
+          id="image"
+          onclick="myfuncion()"
+        />
+      </span>
+      click on the button resize to see a larger version
+    </p>
+    <script>
+      var change = false;
+      function myfuncion() {
+        change = !change;
+        if (change) {
+          var img = document.getElementById("image");
+          img.style.width = "300px";
+          img.style.height = "300px";
+          img.style.cursor = "pointer";
+        } else {
+          var img = document.getElementById("image");
+          img.style.width = "700px";
+          img.style.height = "700px";
+          img.style.cursor = "pointer";
+        }
+      }
+    </script>
+    <a href="#">Click here for informational class web page </a>
+    <p>The class covers several areas of study</p>
+    <ul>
+      <li>The central Processing Unit</li>
+      <li>Input and Output</li>
+      <li>Storege</li>
+      <li>Networking</li>
+      <li>Word Processing</li>
+      <li>Spredsheet</li>
+      <li>Programming (Visual Basic)</li>
+    </ul>
+
+    <form action="#">
+      <fieldset style="width: 500px">
+        <legend>Shipping Address</legend>
+        Name: <br />
+        <input type="text" /><br />
+        Address: <br />
+        <input type="text" name="" id="" /><br />
+        City : <br />
+        <input type="text" name="" id="" /><br />
+        State: <br />
+        <input type="text" /><br />
+        Zip : <br />
+        <input type="text" /><br />
+      </fieldset>
+    </form>
+  </body>
+</html>

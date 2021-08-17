@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="">
+      <h3>
+        <script>
+          document.write("<h1> Prime Number</h1>");
+          //prime Number
+
+          var is_prime = (num) => {
+            var prime = false;
+            for (var i = 2; i < num; i++) {
+              if (num % i == 0) {
+                prime = true;
+              }
+            }
+            if (!prime) {
+              document.write(" Given Number is Prime :  " + num);
+            } else {
+              document.write("Given Number is not prime...!");
+            }
+          };
+          is_prime(15);
+          document.write("<hr>");
+
+          document.write("<h2>Calculation number</h2>");
+
+          var calcNum = (num) => {
+            var temp = 0;
+            var sum = 0;
+            while (num > 0) {
+              temp = num % 10;
+              sum = sum + temp;
+              num = Math.floor(num / 10);
+            }
+            document.write(sum);
+          };
+          calcNum(5674);
+
+          document.write("<hr>");
+          document.write("<h1> Factorial of Num</h1>");
+          var factorial = (numFact) => {
+            var fact = 1;
+            for (var i = 1; i <= numFact; i++) {
+              fact = fact * i;
+            }
+            document.write(numFact + " factorial is a  :" + fact);
+          };
+          factorial(30);
+          document.write("<hr>");
+          document.write("<h1> Pattern </h1>");
+
+          function pattern() {
+            for (var i = 1; i <= 5; i++) {
+              for (var j = 1; j <= i; j++) {
+                document.write(j + " ");
+              }
+              document.write("<br>");
+            }
+          }
+          pattern();
+
+          document.write("<hr>");
+          document.write("<h1>Cheak variable exit or undefined</h1>");
+
+          var cheakVar = () => {
+            var a = 10;
+            if (typeof a == "undefined") {
+              document.write("Variale is undefined");
+            } else {
+              document.write("Variable Existed");
+            }
+          };
+          cheakVar();
+        </script>
+      </h3>
+    </div>
+  </body>
+</html>

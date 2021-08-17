@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      <script>
+        var n = 5;
+        var string = " ";
+        for (var i = 0; i < 6; i++) {
+          // for (let k = 0; k < n - i; k++) {
+          //   string += " ";
+          // }
+          for (var j = 0; j < i; j++) {
+            document.write("*");
+          }
+          document.write("<br>");
+        }
+        document.write(string);
+      </script>
+      <hr />
+      <!-- <script>
+        var n = 5;
+        var string = "";
+        for (var i = 0; i < n; i++) {
+          // printing star
+          for (var k = 0; k < n - i; k++) {
+            string += "*";
+          }
+          string += "<br>";
+        }
+        document.write(string);
+      </script> -->
+      <hr />
+      <script>
+        var even = [];
+        for (var i = 10; i <= 30; i++) {
+          if (i % 2 == 0) {
+            even.push(i);
+            document.write(i + "<br>");
+          }
+        }
+        document.write("Even Number  between 10 to 30 : ");
+        for (var j = 0; j < even.length; j++) {
+          document.write(+even[j] + "   ");
+        }
+      </script>
+      <hr />
+      <!-- <script>
+        let r = 5;
+        var string = " ";
+        // External loop
+        for (var i = 1; i <= r; i++) {
+          // printing spaces
+          for (var j = 1; j <= r - i; j++) {
+            string += " ";
+          }
+          // printing star
+          for (var k = 0; k < 2 * i - 1; k++) {
+            string += "*";
+          }
+          string += "\n  <br>";
+        }
+        document.write(string);
+        console.log(string);
+      </script> -->
+      <hr />
+      <script>
+        var n1 = 0,
+          n2 = 1,
+          temp,
+          count = 10;
+        document.write(n1 + "  " + n2);
+        for (var i = 2; i < count; ++i) {
+          temp = n1 + n2;
+          document.write(" " + temp);
+          n1 = n2;
+          n2 = temp;
+        }
+      </script>
+    </h1>
+  </body>
+</html>

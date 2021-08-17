@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <body>
+      <style>*{
+          margin: 0;
+          padding: 0;
+      }
+      table,th,td{
+          border: 1px solid;
+          border-collapse: collapse;
+          padding: 5px;
+
+      }
+      .nav{
+          display: flex;
+          background-color: black;
+      }
+      .nav-item:hover{
+          background-color: white;
+          border: red;
+          color:black;
+          transition: 0.5s ease-out;
+      }
+      .nav-item{
+          text-decoration: none;
+          list-style: none;
+          margin: 10px;
+          padding: 5px;
+          color: white;
+          cursor: pointer;
+      }
+      
+      </style>
+      <nav class="navbar">
+         
+          <ul class="nav">
+              <li class="nav-item">Home </li>
+              <li class="nav-item">Contact Us</li>
+              <li  class="nav-item">Services</li>
+          </ul>
+      </nav>
+    <h1>Time Table</h1>
+    <div style="text-align: center">
+      <table style="width: 500px; border: 1px solid;margin: 15px;">
+        <tr>
+          <th colspan="6">Time Table</th>
+        </tr>
+        <tr>
+          <th rowspan="6">Hours</td>
+         <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths </td>
+            <td>Arts</td>
+        </tr>
+         <tr>
+            <td>Social</td>
+            <td>Marathi</td>
+            <td>Hindi</td>
+            <td>English</td>
+            <td>Geography</td>
+        </tr>
+        <tr>
+            <th colspan="6" >Lunch</th>
+        </tr>
+        <tr>
+          <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths </td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths </td>
+        </tr>
+      </table>
+  </div>
+  <hr>
+<div>
+    <table style="width: 500px; margin:15px">
+<tbody>
+    <tr>
+        <th rowspan="2">Day</th>
+        <th colspan="3">Seminar</th>
+    </tr>
+    <tr>
+        <th colspan="2">Schedule</th>
+        <th rowspan="2">Topic</th>
+    </tr>
+<tr>
+    <td rowspan="3" >Monday</td>
+    <th>Begain</th>
+    <th>End</th>
+</tr>
+<tr>
+    <td rowspan="2" style="background: rgb(248, 248, 120);">
+       8.00 AM
+    </td>
+    <td rowspan="2" style="background: rgb(194, 241, 180);">
+       5.00 AM
+    </td>
+    <td>
+        Intoduction to XML
+    </td>
+</tr>
+<tr>
+    <td>
+        Validity DTD and Relax Ng
+    </td>
+</tr>
+   <tr>
+       <td rowspan="3">
+Tuesday
+       </td>
+       <td style="background: rgb(248, 248, 120);">
+           8.00AM
+       </td>
+        <td style="background: rgb(248, 248, 120);">
+           11.00AM
+       </td>
+        <td rowspan="2">
+           XPath
+       </td>
+   </tr>
+   <tr>
+       <td style="background: rgb(248, 248, 120);"> 11.00 AM</td>
+        <td style="background: rgb(115, 183, 238);">2.00AM</td>
+    </tr>
+    <tr>
+        
+        <td style="background: rgb(115, 183, 238);">2.00AM</td>
+    <td style="background-color: mediumslateblue;">5.00AM</td>
+<td>XSL Tranfarmation</td>    
+</tr>
+   <tr>
+       <td>Wednsday</td>
+       <td style="background: rgb(248, 248, 120);">8.30AM</td>
+       <td style="background-color: rgb(80, 240, 160);">12.00AM</td>
+       <td>XSL Formatting Object</td>
+   </tr>
+</tbody>
+    </table>
+</div>
+<hr>
+<hr>
+<div>
+    <form style="width: 500px; border: 1px solid; margin: 15px;">
+<fieldset>
+    <legend>
+        Contact Info
+    </legend>
+    Name: <input type="text" style="margin-bottom: 10px;"><br>
+    Address : <input type="text"> <span>    </span><select >
+        <option value="#">USA</option>
+        <option value="#">IND</option>
+        <option value="#">Freanch</option>
+    </select>
+</fieldset>
+<div style="margin: 10px;">
+    GENDER: <br> 
+  Male: <input type="radio" name="gender" value="male" checked>
+  Female: <input type="radio" name="gender" value="Female">
+  <br>
+  <textarea placeholder="Comments" name="Comments" id="" cols="50" rows="5" style="margin: 10px;"></textarea>
+ <br>
+
+<input type="checkbox"> I would like to subscribe to the Newsletter
+<br>
+<div style="text-align: center; margin: 10px; ">
+<input type="submit"> <input type="reset"><br>
+</div>
+</div>
+
+    </form>
+</div>
+<hr>
+  </body>
+</html>

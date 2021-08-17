@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="text-align: ">
+    <script>
+      document.write("<h1> Armstrong Number</h1>");
+      function armstrong(num) {
+        var temp, sum, r;
+        temp = num;
+        sum = 0;
+        while (temp !== 0) {
+          r = temp % 10;
+          sum = sum + r * r * r;
+          temp = Math.floor(temp / 10);
+        }
+        if (num == sum) {
+          document.write("Given number Is Armstrong" + `  ${num}`);
+        } else {
+          document.write("Given Numbsr Is Not Armstrong Number");
+        }
+      }
+      armstrong(153);
+      document.write("<hr>");
+
+      function pattern1() {
+        for (let i = 1; i <= 5; i++) {
+          for (let j = 1; j <= 5 - i; j++) {
+            document.write("&nbsp;");
+          }
+          for (let k = 1; k <= i; k++) {
+            document.write(k + " ");
+          }
+          document.write("<br>");
+        }
+      }
+      pattern1();
+      document.write("<hr>");
+      function pattern2() {
+        //let n = 6;
+        for (var i = 5; i >= 1; i--) {
+          for (var j = i; j >= 1; j--) {
+            document.write(j + " ");
+          }
+
+          document.write("<br>");
+        }
+      }
+      pattern2();
+    </script>
+    <script>
+      function pattern3() {
+        var n,
+          m = 1;
+        n = 5;
+
+        for (let i = n; i >= 1; i--) {
+          for (let j = 1; j < m; j++) {
+            document.write("&nbsp;");
+          }
+          for (let k = 1; k <= i; k++) {
+            document.write("* ");
+          }
+          m++;
+          document.write("<br>");
+        }
+      }
+      pattern3();
+    </script>
+  </body>
+</html>

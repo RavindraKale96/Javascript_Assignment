@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <script>
+        document.write("<h2>Area of tringle and Circle</h2>");
+        function area_of_Circle() {
+          var radius = 12.4;
+          var pi = 3.14;
+          return pi * (radius * radius);
+        }
+        function area_of_triangle() {
+          var base = 10;
+          var hight = 3.5;
+          return (base * hight) / 2;
+        }
+        document.write("Area OF Circle :" + area_of_Circle() + "<br>");
+        document.write("Area OF triangle :" + area_of_triangle());
+      </script>
+      <hr />
+      <h2>Perfect Number</h2>
+      <script>
+        var perfect_num = function () {
+          var num = 28;
+          var temp = 0;
+          for (var i = 1; i <= num / 2; i++) {
+            if (num % i == 0) {
+              temp = temp + i;
+            }
+          }
+          if (temp === num && temp !== 0) {
+            document.write("Given number is perfect  :" + temp);
+          } else {
+            document.write("Given Number is  Not perfect");
+          }
+        };
+        perfect_num();
+      </script>
+      <hr />
+      <h2>Multiplication table</h2>
+      <script>
+        function multi_table(num) {
+          for (var i = 1; i <= 10; i++) {
+            var result = i * num;
+            document.write(num + " * " + i + " = " + result + "<br>");
+          }
+        }
+        multi_table(25);
+      </script>
+      <hr />
+      <h2>Multiplication cheak in inner Function</h2>
+      <script>
+        function multiplication(num1, num2) {
+          var mult;
+          mult = num1 * num2;
+          function cheak() {
+            if (mult > 100) {
+              document.write("Multiplication is Grater than 100  :  " + mult);
+            } else {
+              document.write("Multiplication lesser than 100   :  " + mult);
+            }
+          }
+          cheak();
+        }
+        multiplication(21, 40);
+      </script>
+    </div>
+  </body>
+</html>
